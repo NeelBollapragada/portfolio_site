@@ -1,7 +1,12 @@
 import React from "react";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
-  return <h2 className="text-2xl text-red-700">App test</h2>;
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 };
 
 export default App;
