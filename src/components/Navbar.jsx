@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,8 +11,8 @@ const Navbar = () => {
           </div>
           <div className="md:ml-auto">
             <div className="flex space-x-14">
-              <p>Home</p>
-              <p>Projects</p>
+              <Link to="/">Home</Link>
+              <Link to="/projects">Projects</Link>
               <p>CV</p>
             </div>
           </div>
