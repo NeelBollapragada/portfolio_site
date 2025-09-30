@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "text-black font-bold underline underline-offset-4"
+      : "text-black";
+
   return (
     <nav className="bg-slate-100 border-b border-black">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -11,8 +16,12 @@ const Navbar = () => {
           </div>
           <div className="md:ml-auto">
             <div className="flex space-x-14">
-              <Link to="/">Home</Link>
-              <Link to="/projects">Projects</Link>
+              <NavLink className={linkClass} to="/">
+                Home
+              </NavLink>
+              <NavLink className={linkClass} to="/projects">
+                Projects
+              </NavLink>
               <p>CV</p>
             </div>
           </div>
