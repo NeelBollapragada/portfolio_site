@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProjectListing = ({ data: { title, stack, image } }) => {
+const ProjectListing = ({ data: { title, slug, stack, image } }) => {
   return (
     <Link
-      to={`/projects/${title.toLowerCase().split(" ").join("-")}`}
+      to={`/projects/${slug}`}
       className="bg-white rounded-xl shadow-md relative flex flex-col h-full hover:shadow-xl transition-shadow duration-200 focus:outline-none focus:ring-2"
     >
       <img

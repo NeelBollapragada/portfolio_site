@@ -97,6 +97,17 @@ const ProjectPage = () => {
                 household features
               </li>
             </ol>
+            <h3 className="text-2xl font-bold pl-4 mb-4">
+              Future Improvements
+            </h3>
+            <ul className="list-disc list-inside text-lg px-6 mb-6">
+              <li>Add local notifications for items nearing expiry</li>
+              <li>Complete barcode scanning functionality</li>
+              <li>
+                Add calender of daily food logs with nutritional breakdown
+              </li>
+              <li>Add internationalization for multilingual support</li>
+            </ul>
           </div>
         </div>
       </div>
