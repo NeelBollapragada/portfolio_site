@@ -1,7 +1,7 @@
-import fridgeTrackerApp1 from "../images/fridge-tracker-app-1.png";
-import fridgeTrackerApp2 from "../images/fridge-tracker-app-2.png";
-import fridgeTrackerApp3 from "../images/fridge-tracker-app-3.png";
-import fridgeTrackerApp4 from "../images/fridge-tracker-app-4.png";
+import fridgeTrackerApp1 from "../images/fridge-tracker-1.png";
+import fridgeTrackerApp2 from "../images/fridge-tracker-2.png";
+import fridgeTrackerApp3 from "../images/fridge-tracker-3.png";
+import fridgeTrackerApp4 from "../images/fridge-tracker-4.png";
 import movieApp1 from "../images/movie-app-1.png";
 import movieApp2 from "../images/movie-app-2.png";
 import movieApp3 from "../images/movie-app-3.png";
@@ -58,7 +58,8 @@ export const projects = [
       "Add internationalization for multilingual support",
     ],
     custom: {
-      h3: "App Features",
+      order: ["h3a", "ul", "h3b", "gallery"],
+      h3a: "App Features",
       ul: [
         "Offline-first design for basic functionality without internet",
         "Search functionality to add food from local database or Open Food Facts",
@@ -69,7 +70,7 @@ export const projects = [
         "Quantity and expiry tracking for every fridge item",
         "Cloud sync to keep data across devices and used for household collaboration",
       ],
-      h3: "Gallery",
+      h3b: "Gallery",
       gallery: [
         fridgeTrackerApp1,
         fridgeTrackerApp2,
@@ -100,8 +101,9 @@ export const projects = [
       "Improve error handling and reporting",
     ],
     custom: {
-      h3: "The Pipeline",
-      p: 'The compiler goes through the following stages: tokenization, parsing to AST, semantic analysis, and code generation. Each stage builds on the previous one to transform the input C code. Tokenization and preprocessing break the code into meaningful words called tokens, for example `x = 5 + 3` tokenizes to `IDENTIFIER(x)`, `ASSIGNMENT_OP(=)`, `INTEGER_LITERAL(5)`, `ARITHMETIC_OP(+)`, `INTEGER_LITERAL(3)`. Parsing looks at the sequence of tokens and tries to understand the grammar, how tokens combine to form valid statements and expressions. The parser builds an Abstract Syntax Tree (AST) to represent the hierarchical structure of the code. Semantic analysis checks if the code "makes sense" - it uses symbol tables to verify variable and function declarations and ensures types are used correctly. Finally the compiler takes the AST and generates assembly code (x86 in this case) that can be assembled and run on a machine.',
+      order: ["h3a", "pa"],
+      h3a: "The Pipeline",
+      pa: 'The compiler goes through the following stages: tokenization, parsing to AST, semantic analysis, and code generation. Each stage builds on the previous one to transform the input C code. Tokenization and preprocessing break the code into meaningful words called tokens, for example `x = 5 + 3` tokenizes to `IDENTIFIER(x)`, `ASSIGNMENT_OP(=)`, `INTEGER_LITERAL(5)`, `ARITHMETIC_OP(+)`, `INTEGER_LITERAL(3)`. Parsing looks at the sequence of tokens and tries to understand the grammar, how tokens combine to form valid statements and expressions. The parser builds an Abstract Syntax Tree (AST) to represent the hierarchical structure of the code. Semantic analysis checks if the code "makes sense" - it uses symbol tables to verify variable and function declarations and ensures types are used correctly. Finally the compiler takes the AST and generates assembly code (x86 in this case) that can be assembled and run on a machine.',
     },
   },
   {
@@ -130,7 +132,8 @@ export const projects = [
       "Add avatar for user profiles",
     ],
     custom: {
-      h3: "App Features",
+      order: ["h3a", "ul", "h3b", "gallery"],
+      h3a: "App Features",
       ul: [
         "Search functionality to search movie by title",
         "Trending movies list showing most popular movies based off user search",
@@ -138,7 +141,7 @@ export const projects = [
         "Movie info displayed with one click",
         "Cloud sync and authentication to keep user movie data across devices",
       ],
-      h3: "Gallery",
+      h3b: "Gallery",
       gallery: [movieApp1, movieApp2, movieApp3, movieApp4],
     },
   },
@@ -165,7 +168,8 @@ export const projects = [
       "Add user authentication to differentiate between employers and potential employees",
     ],
     custom: {
-      h3: "Gallery",
+      order: ["h3a", "gallery"],
+      h3a: "Gallery",
       gallery: [jobsPortal1, jobsPortal2, jobsPortal3],
     },
   },
@@ -189,7 +193,8 @@ export const projects = [
       "Add password protection for notes",
     ],
     custom: {
-      h3: "Gallery",
+      order: ["h3a", "gallery"],
+      h3a: "Gallery",
       gallery: [notesApp1, notesApp2],
     },
   },
@@ -210,6 +215,7 @@ export const projects = [
       "Press Enter to start the game and spacebar to jump",
     ],
     custom: {
+      order: ["h3a", "gallery"],
       h3: "Gallery",
       gallery: [dinoGame],
     },
@@ -226,7 +232,8 @@ export const projects = [
       "Search for any city to view current weather",
     ],
     custom: {
-      h3: "Gallery",
+      order: ["h3a", "gallery"],
+      h3a: "Gallery",
       gallery: [weatherApp],
     },
   },
@@ -247,7 +254,8 @@ export const projects = [
       "Search for any keyword to view related images",
     ],
     custom: {
-      h3: "Gallery",
+      order: ["h3a", "gallery"],
+      h3a: "Gallery",
       gallery: [imageSearchApp],
     },
   },
@@ -276,7 +284,8 @@ export const projects = [
       "Hide API keys and sensitive information using environment variables",
     ],
     custom: {
-      h3: "App Features",
+      order: ["h3a", "ul", "h3b", "gallery"],
+      h3a: "App Features",
       ul: [
         "Search functionality to search emails by subject, message, and sender/receiver if checking sent/inbox folder",
         "Multiple functional folders including, inbox, starred, sent, important",
@@ -284,7 +293,7 @@ export const projects = [
         "Email content shown with one click",
         "Google authentication and cloud storage using Firebase",
       ],
-      h3: "Gallery",
+      h3b: "Gallery",
       gallery: [gmailClone],
     },
   },
@@ -315,13 +324,14 @@ export const projects = [
       "Hide API keys and sensitive information using environment variables",
     ],
     custom: {
-      h3: "App Features",
+      order: ["h3a", "ul", "h3b", "gallery"],
+      h3a: "App Features",
       ul: [
         "Display movies in several categories, such as Action, Horror, Comedy etc.",
         "Authentication provided by Firebase",
         "Stripe payment used for user subscriptions",
       ],
-      h3: "Gallery",
+      h3b: "Gallery",
       gallery: [netflixClone1, netflixClone2, netflixClone3, netflixClone4],
     },
   },
