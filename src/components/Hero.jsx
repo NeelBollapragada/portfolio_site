@@ -5,7 +5,7 @@ import email from "../assets/icons/mail.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-1 bg-slate-100 justify-center items-center dark:bg-slate-950">
+    <div className="flex flex-1 bg-slate-100 justify-center items-center dark:bg-slate-950 overflow-x-hidden">
       <div className="mx-auto max-w-5xl text-center">
         <h1 className="text-5xl font-bold dark:text-white">
           Neel Bollapragada
