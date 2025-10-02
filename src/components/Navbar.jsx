@@ -3,15 +3,16 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import cv from "../assets/CV___UoE - Neel Bollapragada.pdf";
 import logo from "../assets/icons/generated-logo-no-bg.png";
+import ThemeBtn from "./themeBtn";
 
 const Navbar = () => {
   const linkClass = ({ isActive }) =>
     isActive
-      ? "text-black font-bold underline underline-offset-4"
-      : "text-black link-underline";
+      ? "text-black my-auto font-bold underline underline-offset-4"
+      : "text-black my-auto link-underline";
 
   return (
-    <nav className="bg-slate-100 border-b border-slate-100">
+    <nav className="bg-slate-100 border-b border-slate-100 dark:bg-slate-950 dark:border-slate-950">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
@@ -20,6 +21,7 @@ const Navbar = () => {
             </NavLink>
             <div className="my-auto md:ml-auto">
               <div className="flex space-x-14">
+                <ThemeBtn className="my-auto" />
                 <NavLink className={linkClass} to="/">
                   Home
                 </NavLink>
@@ -27,7 +29,7 @@ const Navbar = () => {
                   Projects
                 </NavLink>
                 <a
-                  className="link-underline"
+                  className="my-auto link-underline"
                   rel="noopener noreferrer"
                   target="_blank"
                   href={cv}

@@ -78,7 +78,7 @@ const ProjectPage = () => {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-screen bg-slate-100 pb-20">
+      <div className="flex min-h-screen bg-slate-100 pb-20 dark:bg-slate-950">
         <div className="mx-auto w-5xl mt-6">
           <div className="flex flex-col justify-center">
             <h1 className="text-4xl text-center font-bold mb-4">

@@ -5,9 +5,11 @@ import email from "../assets/icons/mail.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-1 bg-slate-100 justify-center items-center">
+    <div className="flex flex-1 bg-slate-100 justify-center items-center dark:bg-slate-950">
       <div className="mx-auto max-w-5xl text-center">
-        <h1 className="text-5xl font-bold">Neel Bollapragada</h1>
+        <h1 className="text-5xl font-bold dark:text-red-700">
+          Neel Bollapragada
+        </h1>
         <p className="mt-8 text-xl">
           Current 3rd Year Computer Science student at the University of
           Edinburgh. Interested in Software Development and Cyber Security.
