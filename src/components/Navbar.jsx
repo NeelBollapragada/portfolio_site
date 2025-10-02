@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import cv from "../assets/CV___UoE - Neel Bollapragada.pdf";
 import logo from "../assets/icons/generated-logo-no-bg.png";
-import ThemeBtn from "./themeBtn";
+import ThemeBtn from "./ThemeBtn";
 
 const Navbar = () => {
   const linkClass = ({ isActive }) =>
