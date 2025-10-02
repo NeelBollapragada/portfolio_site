@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  @apply bg-slate-100 dark:bg-slate-950;
 }
 
 .no-scrollbar::-webkit-scrollbar {

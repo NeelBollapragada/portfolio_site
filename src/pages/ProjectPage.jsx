@@ -160,7 +160,7 @@ const ProjectPage = () => {
                   return (
                     <div
                       key="gallery"
-                      className="flex overflow-x-scroll w-5xl px-6 no-scrollbar mb-6"
+                      className="flex overflow-x-scroll w-xl px-6 no-scrollbar mb-6 sm:w-2xl md:w-3xl lg:w-4xl xl:w-5xl"
                     >
                       {project.custom[key].map((imgSrc, index) => (
                         <img
