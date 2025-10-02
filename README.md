@@ -15,7 +15,7 @@ This is my personal developer portfolio, built to showcase my projects, skills, 
 
 ## Live Demo
 
-[View Portfolio](https://portfolio-site-ashen-two.vercel.app/projects/notes-app)
+[View Portfolio](https://portfolio-site-ashen-two.vercel.app)
 
 ## Local Demo
 
