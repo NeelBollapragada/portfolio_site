@@ -10,9 +10,9 @@ const ThemeBtn = () => {
 
   return (
     <div className="flex items-center">
-      <BedtimeIcon sx={{ color: "#4b5563" }} />
-      <Switch onChange={handleToggle} defaultChecked />
       <LightModeIcon sx={{ color: "#fbbf24" }} />
+      <Switch onChange={handleToggle} />
+      <BedtimeIcon sx={{ color: "#4b5563" }} />
     </div>
   );
 };

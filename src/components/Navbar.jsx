@@ -8,8 +8,8 @@ import ThemeBtn from "./themeBtn";
 const Navbar = () => {
   const linkClass = ({ isActive }) =>
     isActive
-      ? "text-black my-auto font-bold underline underline-offset-4"
-      : "text-black my-auto link-underline";
+      ? "text-black my-auto font-bold underline underline-offset-4 dark:text-white"
+      : "text-black my-auto link-underline dark:text-white";
 
   return (
     <nav className="bg-slate-100 border-b border-slate-100 dark:bg-slate-950 dark:border-slate-950">
@@ -29,7 +29,7 @@ const Navbar = () => {
                   Projects
                 </NavLink>
                 <a
-                  className="my-auto link-underline"
+                  className="text-black my-auto link-underline dark:text-white"
                   rel="noopener noreferrer"
                   target="_blank"
                   href={cv}
