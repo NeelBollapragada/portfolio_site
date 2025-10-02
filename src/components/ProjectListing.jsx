@@ -5,7 +5,7 @@ const ProjectListing = ({ data: { title, slug, stack, image } }) => {
   return (
     <Link
       to={`/projects/${slug}`}
-      className="bg-white rounded-xl shadow-md relative flex flex-col h-full hover:shadow-xl transition-shadow duration-200 focus:outline-none focus:ring-2"
+      className="bg-white rounded-xl shadow-md relative flex flex-col h-full hover:shadow-xl hover:-translate-y-4 ease-in-out transition-all duration-200 focus:outline-none focus:ring-2"
     >
       <img
         className="rounded-t-xl h-32 border-b-1 border-slate-700"
