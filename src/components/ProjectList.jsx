@@ -76,9 +76,9 @@ const ProjectList = () => {
   ];
 
   return (
-    <div className="flex min-h-screen bg-slate-100 pb-20">
+    <div className="flex min-h-screen bg-slate-100 pb-20 dark:bg-slate-950">
       <div className="mx-auto max-w-6xl">
-        <div className="grid grid-cols-4 gap-15 mt-20 mb-32">
+        <div className="grid grid-cols-1 gap-15 mt-20 mb-32 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {projects.map((item) => (
             <ProjectListing key={item.title} data={item} />
           ))}

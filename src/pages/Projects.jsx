@@ -5,7 +5,6 @@ import ProjectList from "../components/ProjectList";
 const Projects = () => {
   return (
     <>
-      <Navbar />
       <ProjectList />
     </>
   );

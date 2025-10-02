@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   font-family: "Montserrat", sans-serif;
+  @apply bg-slate-100 dark:bg-slate-950;
 }
 
 .no-scrollbar::-webkit-scrollbar {
